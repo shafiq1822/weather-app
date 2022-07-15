@@ -10,37 +10,43 @@ body{
 }
 
 .app{
-  background-image: url("./assets/cold-bg.jpeg");
-  background-size: cover;
+  background-image: url("./assets/cold\ bg.jpeg");
+  /* background-size: cover; */
+  /* object-fit: cover; */
   background-position: bottom;
   transition: all .3s ease-out;
+  width: 25rem;
+  border-radius: 30px;
+  margin: 2rem auto;
+  box-shadow: 0 5px 40px  rgb(74, 74, 74);
 }
 
 .app.warm{
-  background-image: url("./assets/warm-bg.jpeg");
+  background-image: url("./assets/warm-bg1.jpeg");
 }
 
 main{
-  height: 100vh;
+  border-radius: 30px;
+  height: 90vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   padding: 25px;
 }
 
 .search-box{
   width: 100%;
-  margin:  0 0 75px;
+  margin:  20px 0 75px;
 }
 
 .search-box .search-bar{
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   appearance: none;
   background: none;
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 16px;
   margin-top: -25px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   color: #313131;
@@ -93,4 +99,18 @@ main{
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px 5px rgba(50,50, 70, 0.5);
+}
+
+
+@media screen and (max-width: 450px){
+  .app{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+
+  main{
+    height: 100vh;
+    border-radius: 0;
+  }
 }
